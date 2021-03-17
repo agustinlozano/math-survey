@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Survey</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Math Survey</h1>
+        <p id="description">En este formulario queremos saber, tu interes, acerca de las matemáticas.</p>
+    </header>
+
+
+
+    <form id="survey-form">
+        <div class="grupo-del-formulario">
+            <label for="name" id="name-label">Nombre</label>
+            <input id="name" type="text" placeholder="Ingrese su nombre" class="" required>
+            <p id="name-error" class="hide">You have entered an incorrect name</p>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <label for="email" id="email-label">Correo Eléctronico</label>
+            <input id="email" type="email" placeholder="example@domain.com" class="" required>
+            <p id="email-error" class="hide">You have entered an incorrect email adderess</p>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <label for="number" id="number-label">Edad (opcional)</label>
+            <input id="number" type="number" value="Edad" min="1" max="120" placeholder="Ingrese su edad" class="">
+            <p id="age-error" class="hide">You have entered an incorrect age value</p>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <p>¿Te gustan las matemáticas?</p>
+            <label><input name="interes-del-usuario" type="radio" value="si">Si</input></label>
+            <label><input name="interes-del-usuario" type="radio" value="no">No</input></label>
+            <label><input name="interes-del-usuario" type="radio" value="tal-vez">Tal vez</input></label>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <p>Caual es tu area favorita de las matemáticas</p>
+            <select name="math-subject" id="dropdown">
+                <option value="car">Álgebra</option>
+                <option value="car">Cálculo</option>
+                <option value="car">Ecuaciones Diferenciales</option>
+                <option value="car">Estadística</option>
+            </select>
+        </div>
+
+        <div class="grupo-del-formulario" id="cosas">
+            <p>Independientemente de tu area preferida de las matemáticas, ¿En que temas te gustaría profundizar?</p>
+            <label><input type="checkbox" value="geometria-analitica">Geometría analitica</label>
+            <label><input type="checkbox" value="algebra-lineal">Álgebra lineal</label>
+            <label><input type="checkbox" value="funciones">Funciones</label>
+            <label><input type="checkbox" value="derivadas">Derivadas</label>
+            <label><input type="checkbox" value="ec-diferenciales-ordinarias">Ecuaciones diferenciales
+                ordinarias</label>
+            <label><input type="checkbox" value="ec-derivadas-parciales">Ecuaciones en derivadas parciales</label>
+            <label><input type="checkbox" value="estadiastica-descriptiva">Estadística descriptiva</label>
+            <label><input type="checkbox" value="estadistica-inferencial">Estadística inferencial</label>
+            <label><input type="checkbox" value="otro">Otro</label>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <p>Si quieres hacer algún comentario acerca de las matemáticas
+                puedes dejarlo aquí debajo.
+            </p>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese un comentario aqui..."></textarea>
+        </div>
+
+        <div class="grupo-del-formulario">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+
+    <!-- The next script is just my improved version of the validations and tests -->
+    <script type="text/javascript" src="js/main.js"></script>  
+    <script type="text/javascript" src="js/tests.js"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
